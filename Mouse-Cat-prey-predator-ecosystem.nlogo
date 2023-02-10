@@ -149,6 +149,7 @@ end
 to display-labels
   ask turtles [ set label "" ]
   if show-energy? [
+    ask mice [ set label round energy ]
     ask cats [ set label round energy ]
     if model-version = "mice-cats-grass" [ ask mice [ set label round energy ] ]
   ]
@@ -336,7 +337,7 @@ TEXTBOX
 20
 178
 160
-194
+196
 Mouse settings
 11
 0.0
@@ -346,7 +347,7 @@ TEXTBOX
 198
 176
 311
-192
+194
 Cat settings
 11
 0.0
